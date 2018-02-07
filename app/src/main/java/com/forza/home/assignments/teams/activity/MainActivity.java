@@ -1,7 +1,9 @@
-package com.forza.home.assignments.teams;
+package com.forza.home.assignments.teams.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.forza.home.assignments.teams.R;
 
 public class MainActivity extends AppCompatActivity {
 
