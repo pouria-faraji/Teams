@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         getSupportActionBar().hide();
 
-        new JsonGetter(this, main_layout).execute();
+        new JsonGetter(this).execute();
     }
 }

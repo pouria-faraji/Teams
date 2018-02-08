@@ -17,20 +17,14 @@ import com.forza.home.assignments.teams.view.ProgressDialog;
 public class JsonGetter extends AsyncTask<Void, Void, Void> {
     private Context _context;
     private ProgressDialog progressDialog;
-    private View _mainView;
-    public JsonGetter(Context context, View mainView) {
+    public JsonGetter(Context context) {
         this._context = context;
-        this._mainView = mainView;
     }
 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
         progressDialog = new ProgressDialog(_context, "Retrieving Data. Please wait...");
-//        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(100,100);
-//        params.addRule(RelativeLayout.CENTER_IN_PARENT);
-//        ((RelativeLayout)_mainView).addView(progressBar, params);
-//        progressBar.setVisibility(View.VISIBLE);  //To show ProgressBar
         progressDialog.show();
     }
 
