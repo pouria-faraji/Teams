@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Teams</string>
+    <string name="no_internet_msg">Please check your internet connection.</string>
+    <string name="problem">A problem has occurred. Please try again later.</string>
 </resources>

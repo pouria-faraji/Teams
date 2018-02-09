@@ -6,6 +6,10 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.WindowManager;
 
+import java.net.InetAddress;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
+
 /**
  * Created by p.faraji on 2/8/2018.
  */
@@ -46,5 +50,14 @@ public class Global {
         Resources r = App.getAppContext().getResources();
         float dp = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, px, r.getDisplayMetrics());
         return (int) dp;
+    }
+    public static boolean isInternetAvailable() {
+        try {
+            InetAddress ipAddr = InetAddress.getByName("google.com");
+            return !ipAddr.equals("");
+
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

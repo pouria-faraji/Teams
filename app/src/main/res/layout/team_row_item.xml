@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/team_row_item_background">
+    <com.forza.home.assignments.teams.view.MuseoTextView
+        android:id="@+id/team_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/team_row_item_title"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:text="Barcelona"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="horizontal">
+
+        <com.forza.home.assignments.teams.view.MuseoTextView
+            android:id="@+id/team_country"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/team_row_item_national"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:text="Spain"/>
+        <com.forza.home.assignments.teams.view.MuseoTextView
+            android:id="@+id/team_national"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/team_row_item_national"
+            android:textColor="@color/white"
+            android:gravity="end"
+            android:text="Club"/>
+    </LinearLayout>
+</LinearLayout>
