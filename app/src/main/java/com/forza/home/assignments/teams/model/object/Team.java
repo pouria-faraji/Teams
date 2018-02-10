@@ -66,4 +66,19 @@ public class Team {
         }
         return result;
     }
+
+    @Override
+    public String toString() {
+        return this.getName()+","+this.getCountryName()+","+(this.getNational()?"National":"Club");
+    }
+
+    public Boolean equals(Team team){
+        if(this.getName().equals(team.getName()) &&
+                this.getNational() == team.getNational()&&
+                this.getCountryName().equals(team.country_name)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
